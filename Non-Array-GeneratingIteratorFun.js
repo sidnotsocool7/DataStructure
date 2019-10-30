@@ -36,3 +36,19 @@
  } else{
     console.log("No numbers are even");
  }
+
+ //reduce function
+function add(runningTotal, currentValue){
+   return runningTotal + currentValue;
+}
+var nums3 = [1,2,3,4,5,6,7,8,9,10];
+var sum = nums.reduce(add);
+console.log(sum3); //55
+
+// reduceRight function
+function concat(accumulatedString, item){
+   return accumulatedString + item;
+}
+var words = ["the", "quick", "brown","fox"];
+var sentence = words.reduceRight(concat);
+console.log(sentence);// fox brown quick the
